@@ -1,11 +1,11 @@
 import React from 'react';
 
 const logos = [
-  { name: 'SOLANA', image: '/projects/solana.webp' },
-  { name: 'Arweave', image: '/projects/arweave.webp' },
-  { name: 'Bittensor', image: '/projects/bittensor.webp' },
-  { name: 'Unknown 1', image: '/projects/unknown1.webp' },
-  { name: 'Unknown 2', image: '/projects/unknown2.webp' }
+  { name: 'SOLANA', image: `${import.meta.env.BASE_URL}projects/solana.webp` },
+  { name: 'Arweave', image: `${import.meta.env.BASE_URL}projects/arweave.webp` },
+  { name: 'Bittensor', image: `${import.meta.env.BASE_URL}projects/bittensor.webp` },
+  { name: 'Unknown 1', image: `${import.meta.env.BASE_URL}projects/unknown1.webp` },
+  { name: 'Unknown 2', image: `${import.meta.env.BASE_URL}projects/unknown2.webp` }
 ];
 
 export const IntegratedProjects: React.FC = () => {

@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <img
         ref={bgRef}
-        src="/hero-bg-img.webp"
+        src={`${import.meta.env.BASE_URL}hero-bg-img.webp`}
         alt="Parallax Background"
         style={{
           position: "fixed",
