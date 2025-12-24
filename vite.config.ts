@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
+  base: '/task-salt-ai/',
   plugins: [react(), tailwindcss()],
   
   // REMOVE or comment out the css preprocessorOptions
