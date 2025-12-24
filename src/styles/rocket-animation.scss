@@ -1,0 +1,50 @@
+.rocket-container {
+  position: fixed;
+  left: 25%;
+  bottom: -128px;  
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  .rocket {
+    position: relative;
+    animation: fly-vertical 8s forwards;
+
+    img {
+      width: 128px;  
+      height: auto;
+      display: block;
+    }
+
+    .flame {
+      position: absolute;
+      bottom: -32px;  
+      left: 50%;
+      transform: translateX(-50%);
+      width: 32px;   
+      height: 64px; 
+      background: linear-gradient(to top, orange, yellow);
+      border-radius: 50%;
+      animation: flame-flicker 0.2s infinite alternate;
+    }
+  }
+}
+
+@keyframes fly-vertical {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-240vh);
+  }
+}
+
+@keyframes flame-flicker {
+  0% {
+    height: 48px;  
+    opacity: 1; 
+  }
+  100% {
+    height: 64px;
+    opacity: 1;  
+  }
+}

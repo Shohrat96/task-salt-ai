@@ -1,0 +1,78 @@
+@use './styles/variables.scss' as *;
+@use './styles/main.scss' as *;
+
+#root {
+  width: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-family;
+  color: $text-primary;
+  line-height: 1.5;
+  background: $bg-dark;
+  min-height: 100vh;
+
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 1.1;
+}
+
+
+section,
+footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  height: fit-content;
+  display: block;
+}
+@media (min-width: 768px) {
+  section,
+  footer {
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+
+.App {
+  min-height: 100vh;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg,
+      $primary-gradient-start,
+      $primary-gradient-end );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.secondary-gradient-text {
+  background: linear-gradient(106.2deg, #FFD6F9 -12.33%, #FFCBB4 50.28%, #FFBEC3 114.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-150px * 8 - 3rem * 8));
+  }
+}

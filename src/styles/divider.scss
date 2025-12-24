@@ -1,0 +1,8 @@
+@use './variables.scss' as *;
+
+.divider {
+  height: 2px;
+  background-color: $bg-dark-gray;
+  border: none;
+  margin: 16px 0;
+}
